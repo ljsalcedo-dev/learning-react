@@ -1,0 +1,119 @@
+.card {
+  border: 1px solid black;
+  box-sizing: border-box;
+  border-radius: 10px;
+  box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  margin: 10px;
+  max-width: 250px;
+  display: inline-block;
+  text-align: center;
+}
+
+.card .card-image {
+  max-width: 60%;
+  height: auto;
+  margin-bottom: 10px;
+}
+
+.card .card-title {
+  font-family: Arial, Helvetica, sans-serif;
+  margin: 0;
+  color: rgb(0, 0, 0);
+  font-weight: bold;
+}
+
+.button {
+  background-color: rgb(91, 96, 238);
+  color: white;
+  padding: 10px 20px;
+  margin: 20px;
+  border-radius: 5px;
+  border: none;
+}
+
+.student {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 2em;
+  padding: 10px;
+  border: 1px solid rgba(0, 0, 0, 0.5);
+
+  display: flex;
+  flex-direction: column;
+}
+
+.student p {
+  margin: 0;
+}
+
+.counter {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.counter p {
+  font-size: 5em;
+}
+
+.counter .button-group {
+  display: flex;
+  flex-direction: row;
+}
+
+.counter .button-group button {
+  border: none;
+  background-color: powderblue;
+  color: #333333;
+  padding: 15px 30px;
+  font-size: 1.25em;
+}
+
+.color-picker-container {
+  font-family: Arial, Helvetica, sans-serif;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.color-picker-container h1 {
+  margin: 50px;
+  font-size: 3rem;
+}
+
+.color-display {
+  width: 300px;
+  height: 300px;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  border: 5px solid rgba(0, 0, 0, 0.5);
+  border-radius: 50px;
+
+  margin-bottom: 25px;
+
+  transition: 0.25s ease;
+}
+
+.color-display p {
+  font-size: 2rem;
+  transition: 0.25s ease;
+}
+
+label {
+  font-size: 1.5rem;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+input[type='color'] {
+  width: 100px;
+  height: 50px;
+  padding: 5px;
+  border-radius: 10px;
+  border: none;
+}
