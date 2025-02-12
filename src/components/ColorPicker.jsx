@@ -4,7 +4,7 @@ export default function ColorPicker() {
   const [color, setColor] = useState("#FFFFFF");
 
   const handleColorChange = (event) => {
-    setColor(event.target.value);
+    setColor(color => color = event.target.value);
   };
 
   const getContrastColor = (hexColor) => {
