@@ -6,14 +6,15 @@
 // import Student from "./components/Student.jsx";
 // import FruitList from "./components/FruitList.jsx";
 // import Counter from "./components/Counter.jsx";
-import ColorPicker from "./components/ColorPicker";
+// import ColorPicker from "./components/ColorPicker";
+import Car from "./components/Car.jsx";
 
 import { useState } from "react";
 
 function App() {
   return (
     <>
-      <ColorPicker />
+      <Car />
     </>
   );
 }
