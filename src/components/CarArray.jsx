@@ -50,29 +50,31 @@ export default function CarArray() {
       <div className="carlist-container">
         <h2>List of Cars</h2>
         <ul>{carList}</ul>
-        <input
-          type="number"
-          name="year"
-          id="year"
-          value={year}
-          onChange={handleYearChange}
-        />
-        <input
-          type="text"
-          name="make"
-          id="make"
-          placeholder="Enter make"
-          value={make}
-          onChange={handleMakeChange}
-        />
-        <input
-          type="text"
-          name="model"
-          id="model"
-          value={model}
-          placeholder="Enter model"
-          onChange={handleModelChange}
-        />
+        <div className="input-fields">
+          <input
+            type="number"
+            name="year"
+            id="year"
+            value={year}
+            onChange={handleYearChange}
+          />
+          <input
+            type="text"
+            name="make"
+            id="make"
+            placeholder="Enter make"
+            value={make}
+            onChange={handleMakeChange}
+          />
+          <input
+            type="text"
+            name="model"
+            id="model"
+            value={model}
+            placeholder="Enter model"
+            onChange={handleModelChange}
+          />
+        </div>
         <br />
         <button onClick={handleAddCar}>Add</button>
       </div>
