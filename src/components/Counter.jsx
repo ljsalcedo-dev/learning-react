@@ -5,15 +5,15 @@ export default function Counter() {
   const [count, setCount] = useState(0);
 
   const handleDecrement = () => {
-    setCount(count => count - 1);
+    setCount(c => c - 1);
   }
 
   const handleReset = () => {
-    setCount(count => count = 0);
+    setCount(c => c = 0);
   }
 
   const handleIncrement = () => {
-    setCount(count => count + 1);
+    setCount(c => c + 1);
   }
 
   return (
