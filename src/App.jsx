@@ -8,13 +8,14 @@ import Food from "./components/Food.jsx";
 // import Counter from "./components/Counter.jsx";
 // import ColorPicker from "./components/ColorPicker";
 // import Car from "./components/Car.jsx";
+import CarArray from "./components/CarArray.jsx";
 
 import { useState } from "react";
 
 function App() {
   return (
     <>
-      <Food />
+      <CarArray />
     </>
   );
 }
