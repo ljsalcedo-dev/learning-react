@@ -1,7 +1,7 @@
 import { useState } from "react";
 
 export default function CarArray() {
-  const [cars, setCarList] = useState([]);
+  const [cars, setCars] = useState([]);
 
   const [year, setYear] = useState(new Date().getFullYear());
   const [make, setMake] = useState("");
@@ -25,17 +25,21 @@ export default function CarArray() {
       make: make,
       model: model,
     };
-    setCarList((c) => [...c, newCar]);
+    setCars((c) => [...c, newCar]);
     setYear((y) => new Date().getFullYear());
     setMake((m) => "");
     setModel((m) => "");
   };
 
-  const handleRemoveCar = () => {};
+  const handleRemoveCar = (index) => {
+    const newCarList = cars.filter((_, i) => i != index);
+
+    setCars((c) => newCarList);
+  };
 
   const carList = cars.map((car, index) => {
     return (
-      <li key={index}>
+      <li key={index} onClick={() => handleRemoveCar(index)}>
         {car.year} {car.make} {car.model}
       </li>
     );
