@@ -1,20 +1,24 @@
 import Button from "./Button.jsx";
-import { useState } from "react";
+import { useEffect, useState } from "react";
 
 export default function Counter() {
   const [count, setCount] = useState(0);
 
+  useEffect(() => {
+    document.title = count % 2 === 0 ? "Even" : "Odd";
+  });
+
   const handleDecrement = () => {
-    setCount(c => c - 1);
-  }
+    setCount((c) => c - 1);
+  };
 
   const handleReset = () => {
-    setCount(c => c = 0);
-  }
+    setCount((c) => (c = 0));
+  };
 
   const handleIncrement = () => {
-    setCount(c => c + 1);
-  }
+    setCount((c) => c + 1);
+  };
 
   return (
     <>
